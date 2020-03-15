@@ -9,7 +9,7 @@
     "test:unit": "dojo build --mode unit && dojo test --unit --config local",
     "test:functional": "dojo build --mode functional && dojo test --functional --config local",
     "test:all": "dojo build --mode unit && dojo build --mode functional && dojo test --all --config local",
-    "pretty": "prettier --write "
+    "pretty": "prettier --write \"{src,tests}/**/*.{ts,tsx,css,html}\""
   },
   "dependencies": {
     "@dojo/framework": "^6.0.0",
@@ -22,7 +22,7 @@
     "@dojo/cli-build-app": "^6.0.0",
     "@dojo/cli-test-intern": "^6.0.0",
     "@types/node": "~9.6.5",
-    "prettier": "^1.19.1",
+    "prettier": "1.19.1",
     "typescript": "~3.4.5"
   }
 }
