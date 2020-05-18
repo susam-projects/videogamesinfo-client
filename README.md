@@ -1,41 +1,30 @@
-# videogamesinfo
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
-This project was generated with the [Dojo CLI](https://github.com/dojo/cli) & [Dojo CLI create app command](https://github.com/dojo/cli-create-app).
+## Getting Started
 
-## Build
+First, run the development server:
 
-Run `npm run build` or `dojo build --mode dist` (the `mode` option defaults to `dist`) to create a production build for the project. The built artifacts will be stored in the `output/dist` directory.
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-## Development Build
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Run `npm run build:dev` or `dojo build --mode dev` to create a development build for the project. The built artifacts will be stored in the `output/dev` directory.
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Development server
+## Learn More
 
-Run `npm run dev` or `dojo build --mode dev --watch file --serve` to create a development build and start a development server. By default the server runs on port `9999`, navigate to `http://localhost:9999/`.
+To learn more about Next.js, take a look at the following resources:
 
-To change the port of the development server use the `--port` option on the `dojo build` command.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-To create an in memory development build and start a development server with hot reload, switch the `--watch` option to `memory`.
+You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
 
-## Running unit tests
+## Deploy on Vercel
 
-To run units tests in node only use `npm run test` or `dojo test` which uses JIT (just in time) compilation.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-To run the unit tests against built bundles, run `npm run test:unit`.
-
-To be re-run the unit tests without needing to re-build the full application each time, first build the app with `--mode unit` and the `--watch` option, `dojo build --mode unit --watch`. Then run `dojo test --config local` to run the unit tests as needed.
-
-The build test artifacts are written to the `output/tests/unit` directory. These tests are located in the `tests/unit` directory.
-
-## Running functional tests
-
-To run the functional tests, run `npm run test:functional`. These tests are located in the `tests/functional` directory.
-
-## Running unit and functional tests together
-
-To run both unit and functional tests as the same time, run `npm run test:all`.
-
-## Further help
-
-To get help for these commands and more, run `dojo` on the command line.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

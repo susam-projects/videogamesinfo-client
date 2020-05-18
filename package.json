@@ -1,28 +1,22 @@
 {
-  "name": "videogamesinfo",
-  "version": "1.0.0",
+  "name": "videogamesinfo-client",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "dojo build --mode dev --watch --serve",
-    "build": "dojo build --mode dist",
-    "build:dev": "dojo build --mode dev",
-    "test": "dojo test",
-    "test:unit": "dojo build --mode unit && dojo test --unit --config local",
-    "test:functional": "dojo build --mode functional && dojo test --functional --config local",
-    "test:all": "dojo build --mode unit && dojo build --mode functional && dojo test --all --config local",
-    "pretty": "prettier --write \"{src,tests}/**/*.{ts,tsx,css,html}\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "pretty": "prettier --write \"{pages,components}/**/*.{ts,tsx}\""
   },
   "dependencies": {
-    "@dojo/framework": "^6.0.0",
-    "@dojo/themes": "^6.0.0",
-    "@dojo/widgets": "^6.0.0",
-    "tslib": "~1.9.1"
+    "next": "9.4.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   },
   "devDependencies": {
-    "@dojo/cli": "^6.0.0",
-    "@dojo/cli-build-app": "^6.0.0",
-    "@dojo/cli-test-intern": "^6.0.0",
-    "@types/node": "~9.6.5",
-    "prettier": "1.19.1",
-    "typescript": "~3.4.5"
+    "@types/node": "^14.0.1",
+    "@types/react": "^16.9.35",
+    "prettier": "^2.0.5",
+    "typescript": "^3.9.2"
   }
 }
