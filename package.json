@@ -9,14 +9,53 @@
     "pretty": "prettier --write \"{pages,components}/**/*.{ts,tsx}\""
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "animate.css": "^4.1.0",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
     "next": "9.4.1",
+    "normalize.css": "^8.0.1",
+    "popper.js": "^1.16.1",
     "react": "16.13.1",
+    "react-bootstrap": "^1.0.1",
     "react-dom": "16.13.1"
   },
   "devDependencies": {
     "@types/node": "^14.0.1",
     "@types/react": "^16.9.35",
+    "node-sass": "^4.14.1",
+    "postcss-flexbugs-fixes": "^4.2.1",
+    "postcss-preset-env": "^6.7.0",
     "prettier": "^2.0.5",
+    "styled-jsx-plugin-postcss": "^2.0.1",
+    "styled-jsx-plugin-sass": "^1.0.0",
     "typescript": "^3.9.2"
-  }
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-flexbugs-fixes": {},
+      "postcss-preset-env": {
+        "autoprefixer": {
+          "flexbox": "no-2009"
+        },
+        "stage": 3,
+        "features": {
+          "custom-properties": false
+        }
+      }
+    }
+  },
+  "browserslist": [
+    "defaults",
+    "> 0.5%",
+    "last 3 Firefox versions",
+    "last 3 Chrome versions",
+    "last 3 Edge versions",
+    "last 3 Safari versions",
+    "Firefox ESR",
+    "IE >= 11",
+    "android 4.4"
+  ]
 }
